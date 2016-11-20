@@ -1,0 +1,268 @@
+Determining size of off64_t failed with the following output:
+Change Dir: /Users/Florence/Documents/WildHacks/OpenCV/opencv-2.4.13/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_302d9/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_302d9.dir/build.make CMakeFiles/cmTC_302d9.dir/build
+Building C object CMakeFiles/cmTC_302d9.dir/OFF64_T.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc    -fsigned-char -W -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-array-bounds -fdiagnostics-show-option -Wno-long-long -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3  -O3 -DNDEBUG   -o CMakeFiles/cmTC_302d9.dir/OFF64_T.c.o   -c /Users/Florence/Documents/WildHacks/OpenCV/opencv-2.4.13/Build/CMakeFiles/CheckTypeSize/OFF64_T.c
+/Users/Florence/Documents/WildHacks/OpenCV/opencv-2.4.13/Build/CMakeFiles/CheckTypeSize/OFF64_T.c:19:12: error: use of undeclared identifier 'off64_t'
+  ('0' + ((SIZE / 10000)%10)),
+           ^
+/Users/Florence/Documents/WildHacks/OpenCV/opencv-2.4.13/Build/CMakeFiles/CheckTypeSize/OFF64_T.c:17:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(off64_t))
+                     ^
+/Users/Florence/Documents/WildHacks/OpenCV/opencv-2.4.13/Build/CMakeFiles/CheckTypeSize/OFF64_T.c:20:12: error: use of undeclared identifier 'off64_t'
+  ('0' + ((SIZE / 1000)%10)),
+           ^
+/Users/Florence/Documents/WildHacks/OpenCV/opencv-2.4.13/Build/CMakeFiles/CheckTypeSize/OFF64_T.c:17:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(off64_t))
+                     ^
+/Users/Florence/Documents/WildHacks/OpenCV/opencv-2.4.13/Build/CMakeFiles/CheckTypeSize/OFF64_T.c:21:12: error: use of undeclared identifier 'off64_t'
+  ('0' + ((SIZE / 100)%10)),
+           ^
+/Users/Florence/Documents/WildHacks/OpenCV/opencv-2.4.13/Build/CMakeFiles/CheckTypeSize/OFF64_T.c:17:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(off64_t))
+                     ^
+/Users/Florence/Documents/WildHacks/OpenCV/opencv-2.4.13/Build/CMakeFiles/CheckTypeSize/OFF64_T.c:22:12: error: use of undeclared identifier 'off64_t'
+  ('0' + ((SIZE / 10)%10)),
+           ^
+/Users/Florence/Documents/WildHacks/OpenCV/opencv-2.4.13/Build/CMakeFiles/CheckTypeSize/OFF64_T.c:17:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(off64_t))
+                     ^
+/Users/Florence/Documents/WildHacks/OpenCV/opencv-2.4.13/Build/CMakeFiles/CheckTypeSize/OFF64_T.c:23:12: error: use of undeclared identifier 'off64_t'
+  ('0' +  (SIZE    % 10)),
+           ^
+/Users/Florence/Documents/WildHacks/OpenCV/opencv-2.4.13/Build/CMakeFiles/CheckTypeSize/OFF64_T.c:17:22: note: expanded from macro 'SIZE'
+#define SIZE (sizeof(off64_t))
+                     ^
+5 errors generated.
+make[1]: *** [CMakeFiles/cmTC_302d9.dir/OFF64_T.c.o] Error 1
+make: *** [cmTC_302d9/fast] Error 2
+
+/Users/Florence/Documents/WildHacks/OpenCV/opencv-2.4.13/Build/CMakeFiles/CheckTypeSize/OFF64_T.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#endif
+
+#define SIZE (sizeof(off64_t))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the include file io.h exists failed with the following output:
+Change Dir: /Users/Florence/Documents/WildHacks/OpenCV/opencv-2.4.13/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4fed8/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_4fed8.dir/build.make CMakeFiles/cmTC_4fed8.dir/build
+Building C object CMakeFiles/cmTC_4fed8.dir/CheckIncludeFile.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc    -fsigned-char -W -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-array-bounds -fdiagnostics-show-option -Wno-long-long -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3  -O3 -DNDEBUG   -o CMakeFiles/cmTC_4fed8.dir/CheckIncludeFile.c.o   -c /Users/Florence/Documents/WildHacks/OpenCV/opencv-2.4.13/Build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Users/Florence/Documents/WildHacks/OpenCV/opencv-2.4.13/Build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'io.h' file not found
+#include <io.h>
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_4fed8.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTC_4fed8/fast] Error 2
+
+
+Determining if the function jbg_newlen exists failed with the following output:
+Change Dir: /Users/Florence/Documents/WildHacks/OpenCV/opencv-2.4.13/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_13a71/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_13a71.dir/build.make CMakeFiles/cmTC_13a71.dir/build
+Building C object CMakeFiles/cmTC_13a71.dir/CheckFunctionExists.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc    -fsigned-char -W -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-array-bounds -fdiagnostics-show-option -Wno-long-long -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3 -DCHECK_FUNCTION_EXISTS=jbg_newlen -O3 -DNDEBUG   -o CMakeFiles/cmTC_13a71.dir/CheckFunctionExists.c.o   -c /Applications/CMake.app/Contents/share/cmake-3.7/Modules/CheckFunctionExists.c
+Linking C executable cmTC_13a71
+/Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_13a71.dir/link.txt --verbose=1
+/Library/Developer/CommandLineTools/usr/bin/cc     -fsigned-char -W -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-array-bounds -fdiagnostics-show-option -Wno-long-long -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3 -DCHECK_FUNCTION_EXISTS=jbg_newlen -O3 -DNDEBUG -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTC_13a71.dir/CheckFunctionExists.c.o  -o cmTC_13a71  
+Undefined symbols for architecture x86_64:
+  "_jbg_newlen", referenced from:
+      _main in CheckFunctionExists.c.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_13a71] Error 1
+make: *** [cmTC_13a71/fast] Error 2
+
+
+Determining if the include file linux/videodev.h exists failed with the following output:
+Change Dir: /Users/Florence/Documents/WildHacks/OpenCV/opencv-2.4.13/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f061e/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_f061e.dir/build.make CMakeFiles/cmTC_f061e.dir/build
+Building C object CMakeFiles/cmTC_f061e.dir/CheckIncludeFile.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc    -fsigned-char -W -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-array-bounds -fdiagnostics-show-option -Wno-long-long -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3  -O3 -DNDEBUG   -o CMakeFiles/cmTC_f061e.dir/CheckIncludeFile.c.o   -c /Users/Florence/Documents/WildHacks/OpenCV/opencv-2.4.13/Build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Users/Florence/Documents/WildHacks/OpenCV/opencv-2.4.13/Build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'linux/videodev.h' file not found
+#include <linux/videodev.h>
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_f061e.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTC_f061e/fast] Error 2
+
+
+Determining if the include file linux/videodev2.h exists failed with the following output:
+Change Dir: /Users/Florence/Documents/WildHacks/OpenCV/opencv-2.4.13/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a2078/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_a2078.dir/build.make CMakeFiles/cmTC_a2078.dir/build
+Building C object CMakeFiles/cmTC_a2078.dir/CheckIncludeFile.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc    -fsigned-char -W -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-array-bounds -fdiagnostics-show-option -Wno-long-long -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3  -O3 -DNDEBUG   -o CMakeFiles/cmTC_a2078.dir/CheckIncludeFile.c.o   -c /Users/Florence/Documents/WildHacks/OpenCV/opencv-2.4.13/Build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Users/Florence/Documents/WildHacks/OpenCV/opencv-2.4.13/Build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'linux/videodev2.h' file not found
+#include <linux/videodev2.h>
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_a2078.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTC_a2078/fast] Error 2
+
+
+Determining if the include file sys/videoio.h exists failed with the following output:
+Change Dir: /Users/Florence/Documents/WildHacks/OpenCV/opencv-2.4.13/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a927e/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_a927e.dir/build.make CMakeFiles/cmTC_a927e.dir/build
+Building C object CMakeFiles/cmTC_a927e.dir/CheckIncludeFile.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc    -fsigned-char -W -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-array-bounds -fdiagnostics-show-option -Wno-long-long -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3  -O3 -DNDEBUG   -o CMakeFiles/cmTC_a927e.dir/CheckIncludeFile.c.o   -c /Users/Florence/Documents/WildHacks/OpenCV/opencv-2.4.13/Build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Users/Florence/Documents/WildHacks/OpenCV/opencv-2.4.13/Build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'sys/videoio.h' file not found
+#include <sys/videoio.h>
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_a927e.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTC_a927e/fast] Error 2
+
+
+Determining if the include file libavformat/avformat.h exists failed with the following output:
+Change Dir: /Users/Florence/Documents/WildHacks/OpenCV/opencv-2.4.13/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_45c76/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_45c76.dir/build.make CMakeFiles/cmTC_45c76.dir/build
+Building C object CMakeFiles/cmTC_45c76.dir/CheckIncludeFile.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc    -fsigned-char -W -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-array-bounds -fdiagnostics-show-option -Wno-long-long -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3  -O3 -DNDEBUG   -o CMakeFiles/cmTC_45c76.dir/CheckIncludeFile.c.o   -c /Users/Florence/Documents/WildHacks/OpenCV/opencv-2.4.13/Build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Users/Florence/Documents/WildHacks/OpenCV/opencv-2.4.13/Build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'libavformat/avformat.h' file not found
+#include <libavformat/avformat.h>
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_45c76.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTC_45c76/fast] Error 2
+
+
+Determining if the include file ffmpeg/avformat.h exists failed with the following output:
+Change Dir: /Users/Florence/Documents/WildHacks/OpenCV/opencv-2.4.13/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c7dbf/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_c7dbf.dir/build.make CMakeFiles/cmTC_c7dbf.dir/build
+Building C object CMakeFiles/cmTC_c7dbf.dir/CheckIncludeFile.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc    -fsigned-char -W -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-array-bounds -fdiagnostics-show-option -Wno-long-long -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3  -O3 -DNDEBUG   -o CMakeFiles/cmTC_c7dbf.dir/CheckIncludeFile.c.o   -c /Users/Florence/Documents/WildHacks/OpenCV/opencv-2.4.13/Build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Users/Florence/Documents/WildHacks/OpenCV/opencv-2.4.13/Build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'ffmpeg/avformat.h' file not found
+#include <ffmpeg/avformat.h>
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_c7dbf.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTC_c7dbf/fast] Error 2
+
+
+Determining if the include file linux/videodev.h exists failed with the following output:
+Change Dir: /Users/Florence/Documents/WildHacks/OpenCV/opencv-2.4.13/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4bc10/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_4bc10.dir/build.make CMakeFiles/cmTC_4bc10.dir/build
+Building C object CMakeFiles/cmTC_4bc10.dir/CheckIncludeFile.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc    -fsigned-char -W -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-array-bounds -fdiagnostics-show-option -Wno-long-long -Werror -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3  -O3 -DNDEBUG   -o CMakeFiles/cmTC_4bc10.dir/CheckIncludeFile.c.o   -c /Users/Florence/Documents/WildHacks/OpenCV/opencv-2.4.13/Build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Users/Florence/Documents/WildHacks/OpenCV/opencv-2.4.13/Build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'linux/videodev.h' file not found
+#include <linux/videodev.h>
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_4bc10.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTC_4bc10/fast] Error 2
+
+
+Determining if the include file linux/videodev2.h exists failed with the following output:
+Change Dir: /Users/Florence/Documents/WildHacks/OpenCV/opencv-2.4.13/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3fc6a/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_3fc6a.dir/build.make CMakeFiles/cmTC_3fc6a.dir/build
+Building C object CMakeFiles/cmTC_3fc6a.dir/CheckIncludeFile.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc    -fsigned-char -W -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-array-bounds -fdiagnostics-show-option -Wno-long-long -Werror -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3  -O3 -DNDEBUG   -o CMakeFiles/cmTC_3fc6a.dir/CheckIncludeFile.c.o   -c /Users/Florence/Documents/WildHacks/OpenCV/opencv-2.4.13/Build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Users/Florence/Documents/WildHacks/OpenCV/opencv-2.4.13/Build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'linux/videodev2.h' file not found
+#include <linux/videodev2.h>
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_3fc6a.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTC_3fc6a/fast] Error 2
+
+
+Determining if the include file sys/videoio.h exists failed with the following output:
+Change Dir: /Users/Florence/Documents/WildHacks/OpenCV/opencv-2.4.13/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_7682d/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_7682d.dir/build.make CMakeFiles/cmTC_7682d.dir/build
+Building C object CMakeFiles/cmTC_7682d.dir/CheckIncludeFile.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc    -fsigned-char -W -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-array-bounds -fdiagnostics-show-option -Wno-long-long -Werror -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3  -O3 -DNDEBUG   -o CMakeFiles/cmTC_7682d.dir/CheckIncludeFile.c.o   -c /Users/Florence/Documents/WildHacks/OpenCV/opencv-2.4.13/Build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Users/Florence/Documents/WildHacks/OpenCV/opencv-2.4.13/Build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'sys/videoio.h' file not found
+#include <sys/videoio.h>
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_7682d.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTC_7682d/fast] Error 2
+
+
+Determining if the include file libavformat/avformat.h exists failed with the following output:
+Change Dir: /Users/Florence/Documents/WildHacks/OpenCV/opencv-2.4.13/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0ae59/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_0ae59.dir/build.make CMakeFiles/cmTC_0ae59.dir/build
+Building C object CMakeFiles/cmTC_0ae59.dir/CheckIncludeFile.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc    -fsigned-char -W -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-array-bounds -fdiagnostics-show-option -Wno-long-long -Werror -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3  -O3 -DNDEBUG   -o CMakeFiles/cmTC_0ae59.dir/CheckIncludeFile.c.o   -c /Users/Florence/Documents/WildHacks/OpenCV/opencv-2.4.13/Build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Users/Florence/Documents/WildHacks/OpenCV/opencv-2.4.13/Build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'libavformat/avformat.h' file not found
+#include <libavformat/avformat.h>
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_0ae59.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTC_0ae59/fast] Error 2
+
+
+Determining if the include file ffmpeg/avformat.h exists failed with the following output:
+Change Dir: /Users/Florence/Documents/WildHacks/OpenCV/opencv-2.4.13/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_745c3/fast"
+/Library/Developer/CommandLineTools/usr/bin/make -f CMakeFiles/cmTC_745c3.dir/build.make CMakeFiles/cmTC_745c3.dir/build
+Building C object CMakeFiles/cmTC_745c3.dir/CheckIncludeFile.c.o
+/Library/Developer/CommandLineTools/usr/bin/cc    -fsigned-char -W -Werror=return-type -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-array-bounds -fdiagnostics-show-option -Wno-long-long -Werror -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3  -O3 -DNDEBUG   -o CMakeFiles/cmTC_745c3.dir/CheckIncludeFile.c.o   -c /Users/Florence/Documents/WildHacks/OpenCV/opencv-2.4.13/Build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/Users/Florence/Documents/WildHacks/OpenCV/opencv-2.4.13/Build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: 'ffmpeg/avformat.h' file not found
+#include <ffmpeg/avformat.h>
+         ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_745c3.dir/CheckIncludeFile.c.o] Error 1
+make: *** [cmTC_745c3/fast] Error 2
+
+
